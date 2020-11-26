@@ -1,11 +1,12 @@
-def find_min_in_nested_arrays(array_1)
-   c = 0
-   g=[]
-   while c <array_1.count do
-     c1 = 0
-     while c1 < array_1[c].coun do
-       if array_1[c][c1]==array_1[c][c1].min
-         g<<array_1[c][c1]
+def find_min_in_nested_arrays(src)
+   new_array =[]
+   row_index = 0
+   while row_index <src.count do
+     element_index = 0
+     min_integer = src[row_index][0]
+     while element_index < src[row_index].coun do
+        if src[row_index][element_index]>min_integer
+          min_integer=[row_index][element_index]
        end
        c1+=1
      end
